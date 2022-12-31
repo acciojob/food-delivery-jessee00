@@ -8,8 +8,8 @@ import com.driver.shared.dto.FoodDto;
 
 public class FoodConverter {
     public static FoodDto foodrequestToDto(FoodDetailsRequestModel foodDetailsRequestModel){
-        FoodDto foodDto=new FoodDto();
-        foodDto.setFoodCategory(foodDetailsRequestModel.getFoodCategory());
+        FoodDto foodDto=new FoodDto();   
+        foodDto.setFoodCategory(foodDetailsRequestModel.getFoodCategory()); 
         foodDto.setFoodName(foodDetailsRequestModel.getFoodName());
         foodDto.setFoodPrice(foodDetailsRequestModel.getFoodPrice());
         return foodDto;
@@ -34,7 +34,7 @@ public class FoodConverter {
     }
 
     public static FoodDetailsResponse foodDtoTOfoodresponse(FoodDto foodDto){
-        FoodDetailsResponse foodDetailsResponse=new FoodDetailsResponse();
+        FoodDetailsResponse foodDetailsResponse=new FoodDetailsResponse();  //conversion
         foodDetailsResponse.setFoodCategory(foodDto.getFoodCategory());
         foodDetailsResponse.setFoodName(foodDto.getFoodName());
         foodDetailsResponse.setFoodPrice(foodDto.getFoodPrice());
