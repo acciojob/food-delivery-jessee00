@@ -23,13 +23,13 @@ public class UserConvertor {
     }
 
     public static UserDto userEntityDto(UserEntity userEntity){
-        UserDto userdto=new UserDto();
+        UserDto userdto=new UserDto();  //conversion
         userdto.setEmail(userEntity.getEmail());
         userdto.setFirstName(userEntity.getFirstName());
         userdto.setLastName(userEntity.getLastName());
         userdto.setId(userEntity.getId());
         userdto.setUserId(userEntity.getUserId());
-        return userdto;
+        return userdto;  //return dto
     }
     public static UserResponse userDtResponse(UserDto userDto){
         UserResponse userresponse=new UserResponse();
